@@ -13,7 +13,7 @@ files:
         initialized_from_dependency: false
         encrypted_possible_answer: '...'
         selected: false
-        status: Unchecked
+        status: Failed
     learner_created: false
   - name: tests/test_task.py
     visible: false
@@ -28,5 +28,9 @@ files:
     visible: true
     is_binary: true
     learner_created: false
-status: Unchecked
+status: Failed
+feedback:
+  message: "ValueError not raised : Факториал считается от не отрицательных целых\
+    \ чисел"
+  time: "Wed, 18 Jun 2025 17:57:58 UTC"
 record: -1
