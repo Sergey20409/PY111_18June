@@ -12,6 +12,13 @@ def stairway_path(stairway: Sequence[Union[float, int]]) -> Union[float, int]:
     """
     ...  # TODO реализовать ленивую динамику
 
+    def cost_star(n):
+        if n in (0, 1):
+            return stairway[n]
+
+        return stairway[n] + min(cost_star(n-1), cost_star(n-2))
+    return cost_star(len(stairway)-1)
+
 
 if __name__ == '__main__':
     print(stairway_path((1, 3, 1, 5)))  # 7

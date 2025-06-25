@@ -12,7 +12,7 @@ files:
         initialized_from_dependency: false
         encrypted_possible_answer: '...'
         selected: false
-        status: Unchecked
+        status: Failed
     learner_created: false
   - name: tests/test_task.py
     visible: false
@@ -27,5 +27,10 @@ files:
     visible: true
     is_binary: true
     learner_created: false
-status: Unchecked
+status: Failed
+feedback:
+  message: "[] != None : Пустая последовательность должна сортироваться :)"
+  time: "Wed, 25 Jun 2025 17:45:06 UTC"
+  expected: "[]"
+  actual: None
 record: -1

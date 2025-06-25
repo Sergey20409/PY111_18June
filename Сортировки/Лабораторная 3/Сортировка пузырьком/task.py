@@ -2,6 +2,8 @@ from typing import Sequence
 
 
 def sort(container: Sequence[int]) -> Sequence[int]:
+
+
     """
     Сортировка пузырьком
 
@@ -14,3 +16,21 @@ def sort(container: Sequence[int]) -> Sequence[int]:
     :return: Отсортированный в порядке возрастания массив
     """
     ...  # TODO реализовать алгоритм сортировки пузырьком
+
+    for i in range(len(container)):
+
+        for j in range(len(container) - i - 1):
+            if container[j] > container[j + 1]:
+                container[j], container[j + 1] = container[j + 1], container[j]
+
+
+    return container
+
+
+if __name__ == "__main__":
+    data = [5,8,3,6,2,1,9]
+    print("Неотсортированный массив:", data)
+
+    sort(data)
+
+    print("Отсортированный массив:", data)
