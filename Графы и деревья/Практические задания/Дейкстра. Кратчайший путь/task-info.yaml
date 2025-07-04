@@ -3,7 +3,7 @@ files:
   - name: task.py
     visible: true
     placeholders:
-      - offset: 693
+      - offset: 4827
         length: 82
         placeholder_text: "...  # TODO вернуть стоимость путей до всех вершин посчитан\
       ных алгоритмом Дейкстры"
@@ -19,8 +19,8 @@ files:
           
               return coasts
         selected: false
-        status: Unchecked
-      - offset: 809
+        status: Solved
+      - offset: 4943
         length: 25
         placeholder_text: "...  # TODO записать граф"
         initial_state:
@@ -41,7 +41,7 @@ files:
                   (5, 6, 9),
               ])
         selected: false
-        status: Unchecked
+        status: Solved
     learner_created: false
   - name: tests/test_task.py
     visible: false
@@ -56,5 +56,8 @@ files:
     visible: true
     is_binary: true
     learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Fri, 04 Jul 2025 17:49:36 UTC"
 record: -1
